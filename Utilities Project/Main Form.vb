@@ -18,6 +18,10 @@ Public Class frmMain
             MessageBox.Show(ex.Message, "Monthly Bills",
                             MessageBoxButtons.OK, MessageBoxIcon.Information)
         End Try
+        lblElectricity.Text = ""
+        lblWater.Text = ""
+        lblGas.Text = ""
+        lblTotal.Text = ""
     End Sub
 
     Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
